@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "remimx-test"
+client_id = "0d2b4f8894c20c91d22e879657e28654"
+application_url = "https://fast-welding-combination-on.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://fast-welding-combination-on.trycloudflare.com/auth/callback",
+  "https://fast-welding-combination-on.trycloudflare.com/auth/shopify/callback",
+  "https://fast-welding-combination-on.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-66b466ee.myshopify.com"
